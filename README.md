@@ -1,100 +1,160 @@
-# HotelVibe 🏨
+# 🏨 HotelVibe — Evolução com Bootstrap 5
 
-**Site de hospedagem desenvolvido com Vue.js**
+**HotelVibe** é um projeto acadêmico de desenvolvimento web que simula a apresentação de um hotel e seu processo de reserva de hospedagem. A aplicação foi desenvolvida utilizando Vue.js 3 e, nesta etapa, recebeu uma evolução visual com a integração do framework CSS Bootstrap 5.
+
+O objetivo desta atualização é aprimorar a interface, melhorar a responsividade e facilitar a organização dos elementos visuais, preservando a estrutura de componentes e a reatividade já existentes no Vue.js.
+
+---
 
 ## 📌 Sobre o projeto
 
-O HotelVibe é um site de hotel desenvolvido como projeto acadêmico, com o objetivo de praticar os principais conceitos do framework Vue.js.
+O HotelVibe apresenta uma interface de hotel fictício, permitindo que o usuário conheça as opções de acomodação, consulte avaliações demonstrativas e simule uma reserva.
 
-A aplicação apresenta opções de quartos, avaliações de hóspedes e um formulário interativo de reserva, permitindo selecionar um quarto, informar os dados da hospedagem e visualizar o valor total da estadia.
+Na evolução do projeto, foi integrado o Bootstrap 5 para aprimorar a construção dos elementos visuais e a adaptação da interface a diferentes tamanhos de tela.
 
 ## ✨ Funcionalidades
 
 - Apresentação do hotel e de seus diferenciais.
 - Exibição de quartos com imagens, descrições, capacidade e preços.
-- Seleção de quarto para realizar uma reserva.
-- Formulário com validação de informações.
-- Cálculo do valor total conforme a quantidade de diárias.
-- Exibição da confirmação da reserva.
-- Seção de avaliações de hóspedes.
-- Layout responsivo para diferentes tamanhos de tela.
+- Seleção de quartos para iniciar uma reserva.
+- Formulário interativo com validação de informações.
+- Seleção das datas de check-in e check-out.
+- Seleção da quantidade de hóspedes.
+- Cálculo automático do valor total conforme a quantidade de diárias.
+- Exibição da confirmação e do resumo da reserva.
+- Seção de avaliações demonstrativas de hóspedes.
+- Navegação responsiva para dispositivos móveis e computadores.
 
-## 🛠️ Tecnologias utilizadas
-
-- Vue.js 3
-- JavaScript
-- HTML5
-- CSS3
-- StackBlitz
-- GitHub
-
-## 🧩 Organização dos componentes
-
-O projeto foi dividido em componentes para facilitar a organização, a manutenção e o reaproveitamento do código.
-
-| Componente | Responsabilidade |
-|---|---|
-| `Header.vue` | Exibe o cabeçalho e a navegação do site. |
-| `QuartoCard.vue` | Apresenta as informações de cada quarto. |
-| `ReservaForm.vue` | Recebe e valida os dados da reserva. |
-| `ReservaConfirmacao.vue` | Exibe os dados e o valor da reserva confirmada. |
-| `AvaliacaoCard.vue` | Apresenta as avaliações dos hóspedes. |
-| `App.vue` | Integra os componentes e controla os dados principais da aplicação. |
-
-## 📚 Conceitos de Vue.js aplicados
-
-- **Componentes:** divisão da interface em partes independentes e reutilizáveis.
-- **`<script setup>`:** sintaxe utilizada nos componentes para organizar a lógica.
-- **`ref()`:** criação de dados reativos.
-- **`v-for`:** renderização de listas de quartos e avaliações.
-- **`v-if`:** exibição condicional de elementos.
-- **`v-model`:** ligação entre os campos do formulário e os dados.
-- **Eventos:** execução de funções em resposta às interações do usuário.
-- **Props:** passagem de dados de um componente para outro.
-- **CSS:** estilização própria da aplicação.
-
-## 🤖 Uso de inteligência artificial
-
-A inteligência artificial foi utilizada como ferramenta de apoio ao desenvolvimento, auxiliando no planejamento da estrutura, na criação inicial dos componentes, na integração da aplicação, na estilização e na organização da documentação.
-
-Os integrantes devem revisar os códigos e compreender as funcionalidades antes da apresentação.
-
-### Registro dos prompts utilizados
-
-Os itens abaixo resumem as solicitações feitas durante o desenvolvimento. Eles devem ser ajustados para corresponder às solicitações realmente utilizadas pela equipe.
-
-| Etapa | Resumo da solicitação à IA |
-|---|---|
-| 1. Planejamento | Solicitação de ajuda para planejar a estrutura de um site de hotel antes de começar a programar. |
-| 2. Estrutura do projeto | Definição da organização dos componentes e da criação do projeto no StackBlitz. |
-| 3. Cabeçalho e quartos | Solicitação de código para o cabeçalho e para um componente reutilizável de apresentação dos quartos. |
-| 4. Reservas | Solicitação dos componentes de formulário de reserva, confirmação e avaliação. |
-| 5. Integração | Solicitação da integração dos componentes no `App.vue` e da criação do CSS geral. |
-| 6. Testes e documentação | Apoio na verificação das funcionalidades e na preparação da documentação do projeto. |
-
-**Importante:** a equipe deve conferir o histórico de conversas e adaptar esse registro, acrescentando ou corrigindo os prompts conforme necessário. A IA foi utilizada como apoio, e o funcionamento do projeto deve ser verificado pelos integrantes.
-
-## ▶️ Como executar o projeto
-
-1. Abra o projeto no StackBlitz.
-2. Aguarde o carregamento das dependências.
-3. Utilize a pré-visualização para acessar o HotelVibe.
-4. Teste a seleção de quartos, o formulário e a confirmação da reserva.
-
-## 👥 Integrantes
-
-- Arthur Gabriel - 04209021
-- Letícia Alves - 04207296
-- Pedro Maia - 04212837
-- Kaio Ruan Felipe Lisboa - 04209555
-- Juliana de Souza Barros 04209576
-- Vitor Angelo - 04211319
-
-
-## 🎓 Objetivo acadêmico
-
-Aplicar conceitos fundamentais de desenvolvimento web com Vue.js, incluindo componentes, reatividade, diretivas, eventos, propriedades, formulários e estilização.
+> **Observação:** o sistema de reservas é demonstrativo. Não há integração com banco de dados, processamento de pagamentos ou armazenamento permanente das informações.
 
 ---
 
-Projeto desenvolvido para fins acadêmicos.
+## 🛠️ Tecnologias utilizadas
+
+| Tecnologia | Aplicação no projeto |
+|---|---|
+| Vue.js 3 | Construção da interface e dos componentes |
+| JavaScript | Lógica e interatividade |
+| HTML5 | Estrutura da aplicação |
+| CSS3 | Estilização personalizada |
+| Bootstrap 5 | Layout, componentes e responsividade |
+| Vite | Ambiente de desenvolvimento e compilação |
+| StackBlitz | Ambiente de desenvolvimento online |
+| GitHub | Versionamento e hospedagem do código |
+
+---
+
+## 🎨 Melhorias implementadas com Bootstrap 5
+
+A integração do Bootstrap 5 foi realizada para aprimorar a interface sem substituir a arquitetura Vue.js do projeto.
+
+As principais melhorias foram:
+
+1. **Cabeçalho responsivo:** implementação de uma navbar com menu recolhível em dispositivos menores.
+2. **Cards de quartos:** utilização de classes Bootstrap para organizar os cartões, padronizar espaçamentos e aplicar sombras.
+3. **Formulário de reserva:** aplicação de estilos padronizados nos campos, seletores, botões e mensagens de validação.
+4. **Organização em colunas:** utilização do sistema de grid para distribuir quartos e avaliações de acordo com o tamanho da tela.
+5. **Responsividade:** aplicação de classes como `col-12`, `col-md-6` e `col-lg-4`, permitindo diferentes distribuições em celulares, tablets e computadores.
+6. **Elementos visuais:** utilização de classes como `shadow-sm`, `rounded-4`, `img-fluid`, `d-flex` e `gap-3`.
+
+A identidade visual original foi preservada, mantendo a paleta de cores em tons de verde, bege e dourado, juntamente com a estilização personalizada em CSS.
+
+---
+
+## 🧩 Organização dos componentes
+
+O projeto utiliza componentes Vue.js para dividir a interface em partes independentes e reutilizáveis.
+
+| Arquivo | Responsabilidade |
+|---|---|
+| `App.vue` | Componente principal, responsável pela integração e pelo gerenciamento dos dados da aplicação. |
+| `Header.vue` | Cabeçalho e navegação responsiva. |
+| `QuartoCard.vue` | Exibição das informações e opções de reserva dos quartos. |
+| `ReservaForm.vue` | Formulário, validação dos dados e cálculo da reserva. |
+| `ReservaConfirmacao.vue` | Exibição da confirmação e do resumo da reserva. |
+| `AvaliacaoCard.vue` | Apresentação das avaliações dos hóspedes. |
+
+---
+
+## 📚 Conceitos de Vue.js aplicados
+
+Durante o desenvolvimento, foram utilizados conceitos fundamentais do Vue.js 3:
+
+- **Componentes:** divisão da interface em partes reutilizáveis.
+- **`<script setup>`:** organização da lógica dos componentes.
+- **`ref()`:** criação e gerenciamento de dados reativos.
+- **`v-for`:** renderização dinâmica de quartos e avaliações.
+- **`v-if`:** exibição condicional de elementos.
+- **`v-model`:** sincronização dos campos do formulário com os dados.
+- **Props:** comunicação e passagem de dados entre componentes.
+- **Eventos (`emit`):** comunicação entre componentes por meio de eventos personalizados.
+
+---
+
+## ▶️ Como executar o projeto
+
+Para executar o projeto localmente, é necessário ter o Node.js instalado.
+
+1. Clone o repositório:
+
+   ```bash
+   git clone https://github.com/ArthurGabriel0/hotel-vibe-bootstrap-adition.git
+   ```
+
+2. Entre na pasta do projeto:
+
+   ```bash
+   cd hotel-vibe-bootstrap-adition
+   ```
+
+3. Instale as dependências:
+
+   ```bash
+   npm install
+   ```
+
+4. Inicie o ambiente de desenvolvimento:
+
+   ```bash
+   npm run dev
+   ```
+
+5. Acesse o endereço local apresentado no terminal.
+
+Para gerar a versão de produção:
+
+```bash
+npm run build
+```
+
+---
+
+## 🤖 Utilização de inteligência artificial
+
+A inteligência artificial foi utilizada como ferramenta de apoio durante o desenvolvimento do projeto, auxiliando no planejamento, na organização dos componentes, na implementação de melhorias visuais, na integração do Bootstrap 5 e na revisão da documentação.
+
+Seu uso teve caráter complementar, sendo necessário que os integrantes revisem, compreendam e sejam capazes de explicar os códigos e as funcionalidades implementadas.
+
+---
+
+## 👥 Integrantes
+
+- Arthur Gabriel — 04209021
+- Letícia Alves — 04207296
+- Pedro Maia — 04212837
+- Kaio Ruan Felipe Lisboa — 04209555
+- Vitor Angelo — 04211319
+
+---
+
+## 🎓 Objetivo acadêmico
+
+Aplicar e aprofundar conhecimentos em desenvolvimento front-end por meio da evolução de uma aplicação Vue.js já existente, integrando o framework CSS Bootstrap 5.
+
+A atividade busca demonstrar como um framework CSS pode contribuir para a organização visual, a padronização dos componentes e a responsividade de uma aplicação, mantendo os conceitos de componentização e reatividade do Vue.js.
+
+---
+
+**Projeto desenvolvido para fins acadêmicos.**
+
+**HotelVibe — Conforto, elegância e boas experiências.**
