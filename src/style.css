@@ -1,0 +1,356 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+
+:root {
+  font-family: 'DM Sans', Arial, sans-serif;
+  color: #26332e;
+  background: #fffefa;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  font-weight: 400;
+  scroll-behavior: smooth;
+  scroll-padding-top: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: #fffefa;
+  font-family: 'DM Sans', Arial, sans-serif;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* HERO */
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 50px;
+  padding: 65px 7% 75px;
+  background: #f5f3eb;
+}
+
+.hero-conteudo {
+  max-width: 550px;
+}
+
+.subtitulo {
+  display: block;
+  color: #a17c3e;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+}
+
+.hero h1,
+.titulo-secao h2 {
+  font-family: 'Playfair Display', Georgia, serif;
+  color: #102b26;
+}
+
+.hero h1 {
+  font-size: clamp(36px, 4vw, 55px);
+  line-height: 1.17;
+  margin: 0 0 22px;
+}
+
+.hero-conteudo > p {
+  color: #68716c;
+  line-height: 1.9;
+  max-width: 460px;
+  margin-bottom: 28px;
+}
+
+.botao-principal {
+  display: inline-block;
+  background: #102b26 !important;
+  color: white !important;
+  text-decoration: none;
+  padding: 15px 23px;
+  border-radius: 6px;
+  font-weight: 600;
+  border: none;
+  transition: 0.3s;
+}
+
+.botao-principal:hover {
+  background: #244a40 !important;
+  transform: translateY(-2px);
+}
+
+.destaques {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-top: 26px;
+  color: #536158;
+  font-size: 12px;
+}
+
+.hero-imagem {
+  position: relative;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.hero-imagem > img {
+  display: block;
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+}
+
+.selo {
+  position: absolute;
+  left: 15px;
+  bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  background: white;
+  padding: 19px 24px;
+  border-radius: 8px;
+}
+
+.selo strong {
+  color: #102b26;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 20px;
+}
+
+.selo span {
+  color: #777;
+  font-size: 12px;
+}
+
+/* BENEFÍCIOS */
+
+.beneficios {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  padding: 32px 7%;
+  border-bottom: 1px solid #eeeae1;
+}
+
+.beneficios > div {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.beneficio-icone {
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: #f1ebdc;
+  color: #96713a;
+  font-size: 25px;
+  flex-shrink: 0;
+}
+
+.beneficios strong {
+  color: #102b26;
+  font-size: 14px;
+}
+
+.beneficios p {
+  color: #858983;
+  font-size: 12px;
+  margin: 6px 0 0;
+}
+
+/* SEÇÕES */
+
+.secao {
+  padding: 85px 7%;
+  scroll-margin-top: 20px;
+}
+
+.titulo-secao {
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto 42px;
+}
+
+.titulo-secao h2 {
+  font-size: clamp(29px, 3vw, 40px);
+  margin: 0 0 13px;
+}
+
+.titulo-secao > p {
+  color: #7b817c;
+  line-height: 1.7;
+  font-size: 14px;
+}
+
+/* RESERVAS */
+
+.secao-reserva {
+  background: #f5f3eb;
+}
+
+.reserva-layout {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 45px;
+  align-items: start;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.reserva-info {
+  padding-top: 15px;
+}
+
+.reserva-info > h3 {
+  color: #102b26;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 30px;
+  line-height: 1.4;
+}
+
+.reserva-info > p {
+  color: #727a74;
+  line-height: 1.8;
+}
+
+.quarto-escolhido,
+.aviso-quarto {
+  margin-top: 30px;
+  padding: 22px;
+  border-radius: 8px;
+  background: white;
+  border: 1px solid #e8e2d5;
+}
+
+.quarto-escolhido > span {
+  color: #a17c3e;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.quarto-escolhido h3 {
+  color: #102b26;
+  margin-bottom: 8px;
+}
+
+.quarto-escolhido p,
+.aviso-quarto {
+  color: #69736c;
+  line-height: 1.7;
+}
+
+/* AVALIAÇÕES */
+
+.avaliacoes-secao {
+  background: #fffefa;
+}
+
+/* RODAPÉ */
+
+.footer {
+  background: #102b26;
+  color: #dce3dd;
+  text-align: center;
+  padding: 42px 20px;
+}
+
+.logo-footer {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 27px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.logo-footer span {
+  color: #d9b879;
+}
+
+.footer p {
+  font-size: 13px;
+  margin: 12px 0;
+}
+
+.footer small {
+  color: #aab8af;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 900px) {
+  .hero {
+    gap: 30px;
+    padding: 50px 5%;
+  }
+
+  .hero-imagem > img {
+    height: 350px;
+  }
+
+  .beneficios,
+  .secao {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .reserva-layout {
+    gap: 25px;
+  }
+}
+
+@media (max-width: 650px) {
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 42px 6%;
+  }
+
+  .hero-imagem > img {
+    height: 280px;
+  }
+
+  .selo {
+    left: 12px;
+    bottom: 12px;
+  }
+
+  .beneficios {
+    grid-template-columns: 1fr;
+    gap: 22px;
+    padding: 28px 6%;
+  }
+
+  .secao {
+    padding: 60px 6%;
+  }
+
+  .reserva-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 38px;
+  }
+}
